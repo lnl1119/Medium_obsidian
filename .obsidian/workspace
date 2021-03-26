@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "H-資料探勘.md",
+            "file": "Markdown cheet sheet.md",
             "mode": "source"
           }
         }
@@ -80,7 +80,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "H-資料探勘.md",
+                "file": "Markdown cheet sheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,7 +106,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "H-資料探勘.md"
+                "file": "Markdown cheet sheet.md"
               }
             }
           }
@@ -118,9 +118,9 @@
     "width": 208
   },
   "lastOpenFiles": [
+    "Markdown cheet sheet.md",
     "Untitled.md",
     "機器學習.md",
-    "Categorize.md",
-    "Markdown cheet sheet.md"
+    "Categorize.md"
   ]
 }
