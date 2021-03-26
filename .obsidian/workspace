@@ -11,7 +11,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "H/H-統計.md",
+            "file": "S-PCA.md",
             "mode": "source"
           }
         }
@@ -82,7 +82,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "H/H-統計.md",
+                "file": "S-PCA.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,7 +108,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "H/H-統計.md"
+                "file": "S-PCA.md"
               }
             }
           }
@@ -120,6 +120,7 @@
     "width": 208
   },
   "lastOpenFiles": [
+    "Untitled.md",
     "H/H-統計.md",
     "0-Categorize.md",
     "0-Markdown cheet sheet.md",
@@ -127,7 +128,6 @@
     "C-Stepwise regression.md",
     "S-小樣本機器學習.md",
     "H-統計.md",
-    "Untitled.md",
     "S-Mode validation.md",
     "S-Loss function.md"
   ]
