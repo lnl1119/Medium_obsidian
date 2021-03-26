@@ -10,10 +10,23 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Untitled.md",
+            "file": "Markdown cheet sheet.md",
             "mode": "source"
           }
-        }
+        },
+        "group": "462868a77b4ad782"
+      },
+      {
+        "id": "2efe48f23e666097",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Markdown cheet sheet.md",
+            "mode": "preview"
+          }
+        },
+        "group": "462868a77b4ad782"
       }
     ],
     "direction": "vertical"
@@ -53,7 +66,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 227
   },
   "right": {
     "id": "610a3dc3fc3b5334",
@@ -69,13 +82,32 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled.md",
+                "file": "Markdown cheet sheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
               }
+            }
+          },
+          {
+            "id": "d4d1e63bdfc88cb5",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "dbcdbd73de166995",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
             }
           }
         ]
