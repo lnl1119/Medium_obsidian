@@ -4,29 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "53dd093c01d6ec4a",
+        "id": "2efe48f23e666097",
         "type": "leaf",
         "active": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Markdown cheet sheet.md",
+            "file": "機器學習.md",
             "mode": "source"
           }
-        },
-        "group": "462868a77b4ad782"
-      },
-      {
-        "id": "2efe48f23e666097",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Markdown cheet sheet.md",
-            "mode": "preview"
-          }
-        },
-        "group": "462868a77b4ad782"
+        }
       }
     ],
     "direction": "vertical"
@@ -82,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Markdown cheet sheet.md",
+                "file": "機器學習.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,7 +94,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "機器學習.md"
+              }
             }
           }
         ],
@@ -118,6 +107,7 @@
     "width": 208
   },
   "lastOpenFiles": [
-    "Untitled.md"
+    "Untitled.md",
+    "Markdown cheet sheet.md"
   ]
 }
