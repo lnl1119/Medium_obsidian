@@ -7,10 +7,11 @@
         "id": "2eff991ea18bf371",
         "type": "leaf",
         "dimension": 49.262792714657415,
+        "active": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "0-Categorize.md",
+            "file": "H/H-統計.md",
             "mode": "source"
           }
         }
@@ -19,7 +20,6 @@
         "id": "6f56d3381df946b2",
         "type": "leaf",
         "dimension": 50.73720728534259,
-        "active": true,
         "state": {
           "type": "markdown",
           "state": {
@@ -82,7 +82,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0-Markdown cheet sheet.md",
+                "file": "H/H-統計.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,7 +108,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "0-Markdown cheet sheet.md"
+                "file": "H/H-統計.md"
               }
             }
           }
@@ -120,15 +120,15 @@
     "width": 208
   },
   "lastOpenFiles": [
-    "0-Markdown cheet sheet.md",
+    "H/H-統計.md",
     "0-Categorize.md",
+    "0-Markdown cheet sheet.md",
     "T-ML v.s. DL.md",
     "C-Stepwise regression.md",
     "S-小樣本機器學習.md",
     "H-統計.md",
     "Untitled.md",
     "S-Mode validation.md",
-    "S-Loss function.md",
-    "T-數據不夠怎麼辦？.md"
+    "S-Loss function.md"
   ]
 }
