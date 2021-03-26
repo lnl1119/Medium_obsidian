@@ -110,12 +110,12 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 208
   },
   "lastOpenFiles": [
     "Untitled.md"
