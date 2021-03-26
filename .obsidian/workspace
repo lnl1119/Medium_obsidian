@@ -4,27 +4,14 @@
     "type": "split",
     "children": [
       {
-        "id": "2eff991ea18bf371",
+        "id": "6f56d3381df946b2",
         "type": "leaf",
-        "dimension": 49.262792714657415,
         "active": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "S-PCA.md",
+            "file": "H/H-深度學習.md",
             "mode": "source"
-          }
-        }
-      },
-      {
-        "id": "6f56d3381df946b2",
-        "type": "leaf",
-        "dimension": 50.73720728534259,
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "0-Markdown cheet sheet.md",
-            "mode": "preview"
           }
         }
       }
@@ -82,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "S-PCA.md",
+                "file": "H/H-深度學習.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,7 +95,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "S-PCA.md"
+                "file": "H/H-深度學習.md"
               }
             }
           }
@@ -121,14 +108,14 @@
   },
   "lastOpenFiles": [
     "Untitled.md",
+    "0-Markdown cheet sheet.md",
+    "S-PCA.md",
     "H/H-統計.md",
     "0-Categorize.md",
-    "0-Markdown cheet sheet.md",
     "T-ML v.s. DL.md",
     "C-Stepwise regression.md",
     "S-小樣本機器學習.md",
     "H-統計.md",
-    "S-Mode validation.md",
-    "S-Loss function.md"
+    "S-Mode validation.md"
   ]
 }
