@@ -1,0 +1,1 @@
+https://lukes-leisure-note.blogspot.com/2020/10/obsidian.html

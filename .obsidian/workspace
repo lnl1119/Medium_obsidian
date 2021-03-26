@@ -4,36 +4,27 @@
     "type": "split",
     "children": [
       {
-        "id": "2db23289d5cd7a21",
+        "id": "2eff991ea18bf371",
         "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "S-Missing data.md",
-            "mode": "source"
-          }
-        }
-      },
-      {
-        "id": "924e786ae614f445",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Markdown cheet sheet.md",
-            "mode": "source"
-          }
-        }
-      },
-      {
-        "id": "de67b6d9bba3df3b",
-        "type": "leaf",
+        "dimension": 68.95056374674762,
         "active": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Categorize.md",
+            "file": "0-Markdown cheet sheet.md",
             "mode": "source"
+          }
+        }
+      },
+      {
+        "id": "6f56d3381df946b2",
+        "type": "leaf",
+        "dimension": 31.04943625325238,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "0-Markdown cheet sheet.md",
+            "mode": "preview"
           }
         }
       }
@@ -91,7 +82,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Categorize.md",
+                "file": "0-Markdown cheet sheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +108,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Categorize.md"
+                "file": "0-Markdown cheet sheet.md"
               }
             }
           }
@@ -126,12 +117,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 208
+    "width": 208,
+    "collapsed": true
   },
   "lastOpenFiles": [
-    "Categorize.md",
-    "Markdown cheet sheet.md",
+    "0-Markdown cheet sheet.md",
     "Untitled.md",
-    "機器學習.md"
+    "H-統計.md",
+    "C-Stepwise regression.md",
+    "0-Categorize.md",
+    "S-Mode validation.md",
+    "S-Loss function.md",
+    "T-數據不夠怎麼辦？.md",
+    "S-數據不夠怎麼辦？.md",
+    "C-stepwise regression.md"
   ]
 }
