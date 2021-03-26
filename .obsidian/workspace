@@ -4,9 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "2efe48f23e666097",
+        "id": "2db23289d5cd7a21",
         "type": "leaf",
-        "active": true,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "S-Missing data.md",
+            "mode": "source"
+          }
+        }
+      },
+      {
+        "id": "924e786ae614f445",
+        "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
@@ -16,8 +26,9 @@
         }
       },
       {
-        "id": "2db23289d5cd7a21",
+        "id": "de67b6d9bba3df3b",
         "type": "leaf",
+        "active": true,
         "state": {
           "type": "markdown",
           "state": {
@@ -80,7 +91,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Markdown cheet sheet.md",
+                "file": "Categorize.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Markdown cheet sheet.md"
+                "file": "Categorize.md"
               }
             }
           }
@@ -118,9 +129,9 @@
     "width": 208
   },
   "lastOpenFiles": [
+    "Categorize.md",
     "Markdown cheet sheet.md",
     "Untitled.md",
-    "機器學習.md",
-    "Categorize.md"
+    "機器學習.md"
   ]
 }
