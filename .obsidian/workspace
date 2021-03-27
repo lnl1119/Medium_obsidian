@@ -4,36 +4,13 @@
     "type": "split",
     "children": [
       {
-        "id": "163b6d4c58260c5c",
-        "type": "split",
-        "children": [
-          {
-            "id": "f9163e3ab7e57d29",
-            "type": "leaf",
-            "active": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "0-Obsidian tips.md",
-                "mode": "source"
-              }
-            },
-            "group": "f1700e7620b47dee"
-          },
-          {
-            "id": "9a406ffc131efbf9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "0-Obsidian tips.md",
-                "mode": "preview"
-              }
-            },
-            "group": "f1700e7620b47dee"
-          }
-        ],
-        "direction": "vertical"
+        "id": "bb0afbcf6d660374",
+        "type": "leaf",
+        "active": true,
+        "state": {
+          "type": "empty",
+          "state": {}
+        }
       }
     ],
     "direction": "vertical"
@@ -73,8 +50,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 227,
-    "collapsed": true
+    "width": 227
   },
   "right": {
     "id": "610a3dc3fc3b5334",
@@ -90,7 +66,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0-Obsidian tips.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,9 +90,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "0-Obsidian tips.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -129,8 +102,8 @@
     "collapsed": true
   },
   "lastOpenFiles": [
-    "0-Obsidian tips.md",
     "0-Markdown cheet sheet.md",
+    "0-Obsidian tips.md",
     "S/S-PCA.md",
     "H-Note Taking.md",
     "S/S-CNN.md",
