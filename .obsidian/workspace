@@ -10,8 +10,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "H/H-深度學習.md",
-            "mode": "source"
+            "file": "H-Note Taking.md",
+            "mode": "preview"
           }
         }
       }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "H/H-深度學習.md",
+                "file": "H-Note Taking.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +95,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "H/H-深度學習.md"
+                "file": "H-Note Taking.md"
               }
             }
           }
@@ -107,15 +107,15 @@
     "width": 208
   },
   "lastOpenFiles": [
-    "Untitled.md",
+    "H-Note Taking.md",
+    "0-Obsidian tips.md",
     "0-Markdown cheet sheet.md",
-    "S-PCA.md",
-    "H/H-統計.md",
-    "0-Categorize.md",
-    "T-ML v.s. DL.md",
-    "C-Stepwise regression.md",
-    "S-小樣本機器學習.md",
-    "H-統計.md",
-    "S-Mode validation.md"
+    "H/H-深度學習.md",
+    "S/S-Imbalanced data.md",
+    "C/C-Regularized regression.md",
+    "C/C-Stepwise regression.md",
+    "Untitled.md",
+    "S/S-PCA.md",
+    "S-PCA.md"
   ]
 }
