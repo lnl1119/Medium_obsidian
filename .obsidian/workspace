@@ -17,7 +17,8 @@
                 "file": "0-Obsidian tips.md",
                 "mode": "source"
               }
-            }
+            },
+            "group": "f1700e7620b47dee"
           },
           {
             "id": "9a406ffc131efbf9",
@@ -28,7 +29,8 @@
                 "file": "0-Obsidian tips.md",
                 "mode": "preview"
               }
-            }
+            },
+            "group": "f1700e7620b47dee"
           }
         ],
         "direction": "vertical"
