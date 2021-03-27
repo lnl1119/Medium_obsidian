@@ -4,16 +4,34 @@
     "type": "split",
     "children": [
       {
-        "id": "6f56d3381df946b2",
-        "type": "leaf",
-        "active": true,
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "H-Note Taking.md",
-            "mode": "preview"
+        "id": "163b6d4c58260c5c",
+        "type": "split",
+        "children": [
+          {
+            "id": "f9163e3ab7e57d29",
+            "type": "leaf",
+            "active": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0-Obsidian tips.md",
+                "mode": "source"
+              }
+            }
+          },
+          {
+            "id": "9a406ffc131efbf9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0-Obsidian tips.md",
+                "mode": "preview"
+              }
+            }
           }
-        }
+        ],
+        "direction": "vertical"
       }
     ],
     "direction": "vertical"
@@ -53,7 +71,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 227
+    "width": 227,
+    "collapsed": true
   },
   "right": {
     "id": "610a3dc3fc3b5334",
@@ -69,7 +88,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "H-Note Taking.md",
+                "file": "0-Obsidian tips.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "H-Note Taking.md"
+                "file": "0-Obsidian tips.md"
               }
             }
           }
@@ -104,18 +123,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 208
+    "width": 208,
+    "collapsed": true
   },
   "lastOpenFiles": [
-    "H-Note Taking.md",
     "0-Obsidian tips.md",
     "0-Markdown cheet sheet.md",
+    "S/S-PCA.md",
+    "H-Note Taking.md",
+    "S/S-CNN.md",
+    "C/C-Stepwise regression.md",
     "H/H-深度學習.md",
     "S/S-Imbalanced data.md",
     "C/C-Regularized regression.md",
-    "C/C-Stepwise regression.md",
-    "Untitled.md",
-    "S/S-PCA.md",
-    "S-PCA.md"
+    "Untitled.md"
   ]
 }
