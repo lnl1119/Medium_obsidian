@@ -8,8 +8,11 @@
         "type": "leaf",
         "active": true,
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "2021-03-28.md",
+            "mode": "source"
+          }
         }
       }
     ],
@@ -45,6 +48,14 @@
                 "sortOrder": "alphabetical"
               }
             }
+          },
+          {
+            "id": "6423f16e681fde6d",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
           }
         ]
       }
@@ -66,6 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "2021-03-28.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -90,7 +102,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "2021-03-28.md"
+              }
             }
           }
         ],
@@ -102,15 +116,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
-    "0-Markdown cheet sheet.md",
-    "0-Obsidian tips.md",
-    "S/S-PCA.md",
-    "H-Note Taking.md",
-    "S/S-CNN.md",
-    "C/C-Stepwise regression.md",
+    "2021-03-28.md",
+    "S/PCA.md",
+    "H/H-Statistics.md",
+    "H/H-Machine learning.md",
+    "H/H-Note Taking.md",
+    "H/H-Deep learning.md",
+    "H/H-Data mining.md",
+    "0-Categorize.md",
     "H/H-深度學習.md",
-    "S/S-Imbalanced data.md",
-    "C/C-Regularized regression.md",
-    "Untitled.md"
+    "H/H-統計.md"
   ]
 }

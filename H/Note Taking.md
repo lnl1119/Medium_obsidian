@@ -5,3 +5,4 @@
 
 # Mind map
 [[gitmind]]
+[[coggle]]
