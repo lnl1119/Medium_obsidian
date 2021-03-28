@@ -4,15 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "bb0afbcf6d660374",
+        "id": "745b60491420cfcb",
         "type": "leaf",
         "active": true,
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "2021-03-28.md",
-            "mode": "source"
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -77,7 +74,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2021-03-28.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,9 +98,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "2021-03-28.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -112,10 +106,10 @@
       }
     ],
     "direction": "horizontal",
-    "width": 208,
-    "collapsed": true
+    "width": 208
   },
   "lastOpenFiles": [
+    "0-Obsidian tips.md",
     "2021-03-28.md",
     "S/PCA.md",
     "H/H-Statistics.md",
@@ -124,7 +118,6 @@
     "H/H-Deep learning.md",
     "H/H-Data mining.md",
     "0-Categorize.md",
-    "H/H-深度學習.md",
-    "H/H-統計.md"
+    "H/H-深度學習.md"
   ]
 }

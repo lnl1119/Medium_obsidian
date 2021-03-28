@@ -1,3 +1,8 @@
+
+---
+date:2021/03/28
+---
+
 https://lukes-leisure-note.blogspot.com/2020/10/obsidian.html
 
 # Markdown cheet sheet
@@ -59,6 +64,19 @@ for i in range():
 >222
 >>33333
 >>>44444
+
+---
+
+## Front matter
+YAML
+`---markdown
+date:2021/03/28  
+tags:["obsidian","markdown"]  
+aliases:  
+別名  
+
+---`
+
 ---
 ---
 # Obsidian Hotkeys
