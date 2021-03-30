@@ -4,20 +4,9 @@
     "type": "split",
     "children": [
       {
-        "id": "103a182fa6de82b5",
-        "type": "leaf",
-        "active": true,
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "S/Clustering.md",
-            "mode": "source"
-          }
-        }
-      },
-      {
         "id": "d6639baf3eccc66d",
         "type": "leaf",
+        "active": true,
         "state": {
           "type": "markdown",
           "state": {
@@ -128,6 +117,7 @@
   },
   "lastOpenFiles": [
     "S/Clustering.md",
+    "Canopy.md",
     "Clustering.md",
     "H/Machine learning.md",
     "S/Hierarchical clustering.md",
@@ -135,7 +125,6 @@
     "Python cheetsheet.md",
     "0-Obsidian tips.md",
     "0-Categorize.md",
-    "Untitled.md",
-    "H/Note Taking.md"
+    "Untitled.md"
   ]
 }
