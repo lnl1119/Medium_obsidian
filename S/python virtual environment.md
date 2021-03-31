@@ -1,9 +1,14 @@
 ---
-
+date: 2021/03/30 
+tags: "#python" 
+aliases: 
+- python#1在mac的終端機用pip建立python虛擬環境 
+---
+# [python#1]在mac終端機用pip建立python虛擬環境
+#python #terminal
 
 
 ---
-
 
 首先，要了解為什麼要建立**虛擬環境**(Virtual Environment)，主要可以分成兩個：
 
@@ -12,6 +17,7 @@
 
 虛擬環境可以想成一個獨立的資料夾，裡面安裝了專案應用需要用到的特定版本的套件，也可以建立多個虛擬環境供不同專案可以使用。
 
+---
 
 # 建立虛擬環境
 
@@ -43,6 +49,8 @@ pip uninstall 一個或是多個套件名稱
 
 conda remove — name tutorial-env numpy
 
+
+---
 
 直接 `pip3 list` 可以叫出 整台電腦有的package
 
