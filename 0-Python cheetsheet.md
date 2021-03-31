@@ -1,1 +1,1 @@
-[[virtual environment]]
+[[python virtual environment]]

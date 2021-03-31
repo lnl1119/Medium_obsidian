@@ -4,13 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "d6639baf3eccc66d",
+        "id": "6aa758d4381e5388",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Timeline for ML.md",
+            "mode": "source"
+          }
+        }
+      },
+      {
+        "id": "e08bdb618b15f5c7",
         "type": "leaf",
         "active": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "S/virtual environment.md",
+            "file": "Template/temp-YAML.md",
             "mode": "source"
           }
         }
@@ -77,7 +88,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "S/virtual environment.md",
+                "file": "Template/temp-YAML.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "S/virtual environment.md"
+                "file": "Template/temp-YAML.md"
               }
             }
           }
@@ -116,15 +127,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "Template/YAML.md",
+    "Template/Timeline.md",
+    "Timeline for ML.md",
+    "Untitled.md",
+    "S/py-1-python virtual environment.md",
     "S/virtual environment.md",
     "H/Deep learning.md",
     "0-Obsidian tips.md",
-    "Template/Timeline.md",
-    "Untitled.md",
     "H/Data mining.md",
-    "S/PCA.md",
-    "S/Clustering.md",
-    "Canopy.md",
-    "Clustering.md"
+    "S/PCA.md"
   ]
 }
