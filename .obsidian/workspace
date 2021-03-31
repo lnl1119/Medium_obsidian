@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "0-Obsidian tips.md",
+            "file": "S/virtual environment.md",
             "mode": "source"
           }
         }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0-Obsidian tips.md",
+                "file": "S/virtual environment.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "0-Obsidian tips.md"
+                "file": "S/virtual environment.md"
               }
             }
           }
@@ -116,6 +116,8 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "S/virtual environment.md",
+    "H/Deep learning.md",
     "0-Obsidian tips.md",
     "Template/Timeline.md",
     "Untitled.md",
@@ -123,8 +125,6 @@
     "S/PCA.md",
     "S/Clustering.md",
     "Canopy.md",
-    "Clustering.md",
-    "H/Machine learning.md",
-    "S/Hierarchical clustering.md"
+    "Clustering.md"
   ]
 }
