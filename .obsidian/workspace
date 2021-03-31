@@ -10,8 +10,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "S/PCA.md",
-            "mode": "preview"
+            "file": "0-Obsidian tips.md",
+            "mode": "source"
           }
         }
       }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "S/PCA.md",
+                "file": "0-Obsidian tips.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "S/PCA.md"
+                "file": "0-Obsidian tips.md"
               }
             }
           }
@@ -116,15 +116,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "0-Obsidian tips.md",
+    "Template/Timeline.md",
+    "Untitled.md",
+    "H/Data mining.md",
     "S/PCA.md",
     "S/Clustering.md",
     "Canopy.md",
     "Clustering.md",
     "H/Machine learning.md",
-    "S/Hierarchical clustering.md",
-    "virtual environment.md",
-    "Python cheetsheet.md",
-    "0-Obsidian tips.md",
-    "0-Categorize.md"
+    "S/Hierarchical clustering.md"
   ]
 }

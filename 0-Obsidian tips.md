@@ -5,6 +5,9 @@ date:2021/03/28
 
 https://lukes-leisure-note.blogspot.com/2020/10/obsidian.html
 
+top ^toc
+
+
 # Markdown cheet sheet
 ---
 ## Basics
@@ -27,7 +30,15 @@ _斜體_	`_斜體_`
 <font color=#0000FF>深藍色</font>
 <font color=#FF00FF>粉紅色</font>
 <font color=#808080>灰色</font>
+
+&lt;table width=&quot;100%&quot;&gt;
+&lt;tr&gt; 
+&lt;td bgcolor=orange&gt;背景色是：orange&lt;/td&gt; &lt;/tr&gt;
+&lt;/table&gt;
+
+
 ---
+
 ## Programming
 ```python
 import pandas as pd
@@ -57,6 +68,8 @@ for i in range():
 ## 註腳???
 文章內容 ^1
 文章內容 [^other]
+
+[[#^toc|go to top]]
 
 ---
 
