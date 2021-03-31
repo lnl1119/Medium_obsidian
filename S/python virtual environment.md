@@ -5,8 +5,13 @@ aliases:
 - python#1在mac的終端機用pip建立python虛擬環境 
 ---
 # [python#1]在mac終端機用pip建立python虛擬環境
-#python #terminal
+#python #terminal #Mac
 
+首先，這篇只針對Mac用戶做介紹。
+
+Terminal 請看這邊
+
+# 為什麼要建立虛擬環境(Virtual Environment)
 
 ---
 
@@ -170,7 +175,7 @@ pip list —local
 
 ## python2 env
 
-sudo /usr/bin/easy\_install virtualenv #安裝virtualenv
+sudo /usr/bin/easy\_install virtualenv # 安裝virtualenv
 
 cd 你要的資料夾路徑
 
@@ -208,7 +213,7 @@ pip3 —version
 
 pip 20.3.1 from /Users/lnl/Documents/pythontest/test1213\_venv/lib/python3.8/site-packages/pip (python 3.8)
 
-which pip #顯示現在pip在哪裏
+which pip # 顯示現在pip在哪裏
 
 `pip list` # 顯示裡面有什麼套件
 

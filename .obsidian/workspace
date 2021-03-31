@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "e08bdb618b15f5c7",
+        "id": "f36f0971b6bae406",
         "type": "leaf",
         "active": true,
         "state": {
@@ -14,10 +14,10 @@
             "mode": "source"
           }
         },
-        "group": "b404a5772a0c09c3"
+        "group": "25e6871fed5be427"
       },
       {
-        "id": "71e307843f05c97d",
+        "id": "9e6e3b7ad919f199",
         "type": "leaf",
         "state": {
           "type": "markdown",
@@ -26,7 +26,7 @@
             "mode": "preview"
           }
         },
-        "group": "b404a5772a0c09c3"
+        "group": "25e6871fed5be427"
       }
     ],
     "direction": "vertical"
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#顯示現在pip在哪裏",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,8 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 227,
-    "collapsed": true
+    "width": 227
   },
   "right": {
     "id": "610a3dc3fc3b5334",
@@ -126,19 +125,18 @@
       }
     ],
     "direction": "horizontal",
-    "width": 208,
-    "collapsed": true
+    "width": 208
   },
   "lastOpenFiles": [
     "S/Python Virtual Environment.md",
+    "Medium tips.md",
+    "Untitled.md",
     "S/python virtual environment.md",
     "Template/YAML.md",
     "Template/Timeline.md",
     "Timeline for ML.md",
-    "Untitled.md",
     "S/py-1-python virtual environment.md",
     "S/virtual environment.md",
-    "H/Deep learning.md",
-    "0-Obsidian tips.md"
+    "H/Deep learning.md"
   ]
 }
