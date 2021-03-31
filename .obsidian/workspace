@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "S/Clustering.md",
+            "file": "S/PCA.md",
             "mode": "preview"
           }
         }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "S/Clustering.md",
+                "file": "S/PCA.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "S/Clustering.md"
+                "file": "S/PCA.md"
               }
             }
           }
@@ -116,6 +116,7 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "S/PCA.md",
     "S/Clustering.md",
     "Canopy.md",
     "Clustering.md",
@@ -124,7 +125,6 @@
     "virtual environment.md",
     "Python cheetsheet.md",
     "0-Obsidian tips.md",
-    "0-Categorize.md",
-    "Untitled.md"
+    "0-Categorize.md"
   ]
 }
