@@ -11,7 +11,7 @@ aliases:
 
 Terminal 請看這邊
 
-# 為什麼要建立虛擬環境(Virtual Environment)
+# 1. 為什麼要建立虛擬環境(Virtual Environment)
 
 ---
 
@@ -24,7 +24,7 @@ Terminal 請看這邊
 
 ---
 
-# 建立虛擬環境
+# 2. 建立虛擬環境
 
 用來建立與管理虛擬環境的機制叫做 venv，安裝Python就預設可以使用，這個要在terminal中執行，若有其他還在跑的terminal就要開一個新的。在建立虛擬環境的時候，在決定要放該虛擬環境的資料夾之後，在 script 中執行 venv 模組並且給定資料夾 path：
 
@@ -32,19 +32,8 @@ python3 -m venv tutorial-env
 
 建立了一個虛擬環境，可以使用以下方法啟動。
 
-在 Windows 系統中，使用：
 
-tutorial-env\\Scripts\\activate.bat
-
-在 Unix 或 MacOS 系統，使用：
-
-source tutorial-env/bin/activate
-
-以下方法可以列出環境中所有已經安裝的套件：
-
-pip list
-
-# 改變環境內容或刪除環境
+# 3. 改變環境內容或刪除環境
 
 如果有想要移除的套件可以使用下面語法
 
