@@ -4,29 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "f36f0971b6bae406",
+        "id": "2dfb8038ca7e0b8a",
         "type": "leaf",
         "active": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "S/Python Virtual Environment.md",
+            "file": "DBSCAN.md",
             "mode": "source"
           }
-        },
-        "group": "25e6871fed5be427"
-      },
-      {
-        "id": "9e6e3b7ad919f199",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "S/Python Virtual Environment.md",
-            "mode": "preview"
-          }
-        },
-        "group": "25e6871fed5be427"
+        }
       }
     ],
     "direction": "vertical"
@@ -90,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "S/Python Virtual Environment.md",
+                "file": "DBSCAN.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +103,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "S/Python Virtual Environment.md"
+                "file": "DBSCAN.md"
               }
             }
           }
@@ -125,12 +112,13 @@
       }
     ],
     "direction": "horizontal",
-    "width": 208
+    "width": 208,
+    "collapsed": true
   },
   "lastOpenFiles": [
+    "Untitled.md",
     "S/Python Virtual Environment.md",
     "Medium tips.md",
-    "Untitled.md",
     "S/python virtual environment.md",
     "Template/YAML.md",
     "Template/Timeline.md",

@@ -1,230 +1,237 @@
 ---
-date: 2021/03/30 
-tags: "#python" 
+date: 2021/04/04 
+tags: ["#python", "#medium"] 
 aliases: 
-- python#1在mac的終端機用pip建立python虛擬環境 
+- [python#01]在macOS終端機用pip建立python虛擬環境(step by step tutorial)
 ---
-# [python#1]在mac終端機用pip建立python虛擬環境
+# [python#01]在macOS終端機用pip建立python虛擬環境(step by step tutorial)
 #python #terminal #Mac
 
-首先，這篇只針對Mac用戶做介紹。
+**（此篇以macOS 系統為例）**
 
-Terminal 請看這邊
+**目錄**  
+[0\. 前言](https://medium.com/%E6%B7%B7%E8%A1%80%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98/python-01-%E5%9C%A8macos%E7%B5%82%E7%AB%AF%E6%A9%9F%E7%94%A8pip%E5%BB%BA%E7%AB%8Bpython%E8%99%9B%E6%93%AC%E7%92%B0%E5%A2%83-step-by-step-tutorial-628719bdc7e3#80d3)  
+[1\. 為什麼要建立虛擬環境(Virtual Environment)](https://medium.com/%E6%B7%B7%E8%A1%80%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98/python-01-%E5%9C%A8macos%E7%B5%82%E7%AB%AF%E6%A9%9F%E7%94%A8pip%E5%BB%BA%E7%AB%8Bpython%E8%99%9B%E6%93%AC%E7%92%B0%E5%A2%83-step-by-step-tutorial-628719bdc7e3#6b1c)  
+[2\. 開始建立你的虛擬環境](https://medium.com/%E6%B7%B7%E8%A1%80%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98/python-01-%E5%9C%A8macos%E7%B5%82%E7%AB%AF%E6%A9%9F%E7%94%A8pip%E5%BB%BA%E7%AB%8Bpython%E8%99%9B%E6%93%AC%E7%92%B0%E5%A2%83-step-by-step-tutorial-628719bdc7e3#f37d)  
+  [2.1 建立新的虛擬環境](https://medium.com/%E6%B7%B7%E8%A1%80%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98/python-01-%E5%9C%A8macos%E7%B5%82%E7%AB%AF%E6%A9%9F%E7%94%A8pip%E5%BB%BA%E7%AB%8Bpython%E8%99%9B%E6%93%AC%E7%92%B0%E5%A2%83-step-by-step-tutorial-628719bdc7e3#0a62)  
+  [2.2 啟動已建立虛擬環境的SOP](https://medium.com/%E6%B7%B7%E8%A1%80%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98/python-01-%E5%9C%A8macos%E7%B5%82%E7%AB%AF%E6%A9%9F%E7%94%A8pip%E5%BB%BA%E7%AB%8Bpython%E8%99%9B%E6%93%AC%E7%92%B0%E5%A2%83-step-by-step-tutorial-628719bdc7e3#e2b0)  
+[3\. 懶人包](https://medium.com/%E6%B7%B7%E8%A1%80%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98/python-01-%E5%9C%A8macos%E7%B5%82%E7%AB%AF%E6%A9%9F%E7%94%A8pip%E5%BB%BA%E7%AB%8Bpython%E8%99%9B%E6%93%AC%E7%92%B0%E5%A2%83-step-by-step-tutorial-628719bdc7e3#e21b)
 
-# 1. 為什麼要建立虛擬環境(Virtual Environment)
+# **0\. 前言**
 
----
+開始碰機器學習至今，經歷過最一開始的安裝Anaconda，找不到套件的路徑後被折騰到電腦重灌，因此立志要奪回對所有套件位置和自己電腦的掌控權力，畢竟平常真的會用到的套件不多。在macOS上主要會用 **terminal** 進行操作，因此如果希望完全掌握整個環境的話，其實是要從Linux的bash開始(推[鳥哥的Linux私房菜第十章](http://linux.vbird.org/linux_basic/0320bash.php))，不過這裡就直接懶人包取用。
 
-首先，要了解為什麼要建立**虛擬環境**(Virtual Environment)，主要可以分成兩個：
+![](https://miro.medium.com/max/60/1*m8MURCq1z0CnKoRrWW6PjQ.png?q=20)
 
-1.  **避免跟原本環境的套件干擾**：Python 在應用的時候常會用到不在標準函式庫的套件和模組，例如最近就開始碰到Anaconda沒有一起下載到的。這時候就會需要某個特定版本的函式庫，而**需要的函式庫可能會跟既有的環境相衝突或是套件互相干擾**，建立虛擬環境能避免相關的問題。
-2.  **需要使用不同版本的套件**：有時候不同專案可能會用到不同版本的同一個套件，比方說兩個專案因不同需求分別要用到pandas0.19跟pandas0.23兩個版本的pandas，但是一個虛擬環境裡只能安裝一個版本的套件，不能同時使用兩個版本的套件，**建立不同虛擬環境就可以分別使用不同版本的同一套件**。
+![](https://miro.medium.com/max/1966/1*m8MURCq1z0CnKoRrWW6PjQ.png)
 
-虛擬環境可以想成一個獨立的資料夾，裡面安裝了專案應用需要用到的特定版本的套件，也可以建立多個虛擬環境供不同專案可以使用。
+## 0.1 Anaconda 不好嗎？
 
----
+半路出家機器學習，不論是線上課還是實體課，老師們的起手式都是直接放出我們的**綠大蟒Anaconda**(先別走～這裡不會講anaconda)
 
-# 2. 建立虛擬環境
+![](https://miro.medium.com/max/60/1*S2kkcLC8IExHKkhvmpw_Lg.png?q=20)
 
-用來建立與管理虛擬環境的機制叫做 venv，安裝Python就預設可以使用，這個要在terminal中執行，若有其他還在跑的terminal就要開一個新的。在建立虛擬環境的時候，在決定要放該虛擬環境的資料夾之後，在 script 中執行 venv 模組並且給定資料夾 path：
+![](https://miro.medium.com/max/894/1*S2kkcLC8IExHKkhvmpw_Lg.png)
 
-python3 -m venv tutorial-env
+一頓安裝後，根據老師的說法：
 
-建立了一個虛擬環境，可以使用以下方法啟動。
+> 你的電腦已經具備**入門**機器學習需要的**所有**東西，不用擔心**套件**和**環境囉！**
 
+不過他沒告訴你的是，什麼都有的同時（還不包含Tensorflow和Keras），也有一隻3GB大的蟒蛇散布在電腦的各個地方。哪天你被機器學習打敗想把他請走，他會向分靈體一樣，你以為已經是最後一個了，換了一個系統清理軟體，依舊可以找到殘存的檔案，也因此會有下面這種教你如何「手動」將anaconda清乾淨的大神文。（目前還沒看到mac版本的教學）
 
-# 3. 改變環境內容或刪除環境
+[
 
-如果有想要移除的套件可以使用下面語法
+## 還我乾淨環境！怒砍Anaconda ! 手動移除windows Anaconda 殘留檔案！
 
-pip uninstall 一個或是多個套件名稱
+### 相關文章：為什麼我的Python 總是學不好? 入門必看！Windows 懶人搭建Anaconda Python 學習環境
 
-刪除虛擬環境
-
-conda remove — name tutorial-env numpy
+medium.com
 
 
----
 
-直接 `pip3 list` 可以叫出 整台電腦有的package
+](https://medium.com/%E8%AA%A4%E9%97%96%E6%95%B8%E6%93%9A%E5%8F%A2%E6%9E%97%E7%9A%84%E5%95%86%E7%AE%A1%E4%BA%BAzino/%E9%82%84%E6%88%91%E4%B9%BE%E6%B7%A8%E7%92%B0%E5%A2%83-%E6%80%92%E7%A0%8Danaconda-%E6%89%8B%E5%8B%95%E7%A7%BB%E9%99%A4windows-anaconda-%E6%AE%98%E7%95%99%E6%AA%94%E6%A1%88-666d88eae69d)
 
-建立資料夾
+總結來說，我不能否定Anaconda強大的**一鍵入門**，但如果你符合以下任何一點，歡迎你繼續看下去：
 
-進到資料夾
+1.  電腦跟我一樣只有最低的128GB，且[Anaconda附贈的諸多套件](https://docs.continuum.io/anaconda/packages/pkg-docs/)你其實都不太會用到。
+2.  安裝Anaconda沒有的套件（例如TensorFlow）卻怎麼import也沒用，網路爬文說是路徑問題，但照著解決後下次遇到的問題好像同一個方法又不適用。
 
-建立venv
+# 1\. 為什麼要建立虛擬環境(Virtual Environment)
 
-`ls`可以看到name\_env在裡面
+## **1.1 避免跟mac原本的環境搞混**
 
-activate name\_env
+macOS系統本身有內建 python2.7.16，最新的 python 截至現在更新到了 python3.9.2。當你打開 terminal 直接輸入 `python --version` ，沒意外會吃到 macOS 自帶的 python2.7.16。如果想要有最新的 python3，可以到 python 的官網下載，然後輸入`python3 --version`，就會看到我的版本是`python3.8.2` 。如過對 terminal 和路徑不熟，在你完全不知道 terminal 預設呼叫的 python 是哪個版本的前提下，你非常有可能會用錯python版本。
 
-確認有沒有盡到name\_env
+![](https://miro.medium.com/max/60/1*qajwZiHXTb9Q8SbZQ2kFJQ.png?q=20)
 
-看name\_env裡面的package(目前只有pip)
+![](https://miro.medium.com/max/1632/1*qajwZiHXTb9Q8SbZQ2kFJQ.png)
 
-開始install packages
+## **1.2 需要使用不同版本的套件**
 
-將環境固定
+進行不同專案的時候會用到不同套件，甚至是同一個套件的不同版本。可能是python一些狀況只支援 python2，也有可能是你需要的pandas是pandas0.19.2，但你目前是最新的pandas1.2.3。當然都是有辦法降級或升級的，但如果你同時需要用到兩種版本，虛擬環境可以很輕鬆地將兩者分開。
 
-將設定好的環境輸出成txt檔
+> 簡單來說，虛擬環境就是一個資料夾，很直觀地包著你安裝的所有套件，與電腦獨立。
 
-確定txt內容
+# 2\. 開始建立你的虛擬環境
 
-deactivate venv
+在不裝Anaconda的前提下，這裡會使用最常見的`pip`來管理python環境，也會用最常見的虛擬環境 `venv`(virtual environment的縮寫)。
 
-如果要delete environment
+以下將分成兩個部分：
 
-另一個方式：
+1.  建立新的虛擬環境
+2.  啟動已建立虛擬環境的SOP
 
-建資料夾
+第一部分只要做一次就好，之後就只要執行第二部分就可以了。
 
-在資料夾內直接建立venv，命名venv
+## 2.1 建立新的虛擬環境
 
-activate
+我的習慣是會先建立一個**空的資料夾**當作虛擬環境的領地，可以將 **虛擬環境** 以及 **會用到它的專案** 放在同一層資料夾中。以下包含
 
-把之前弄好的環境requirements.txt叫進來
+[2.1.1 到你想要建新資料夾的地方](https://medium.com/%E6%B7%B7%E8%A1%80%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98/python-01-%E5%9C%A8macos%E7%B5%82%E7%AB%AF%E6%A9%9F%E7%94%A8pip%E5%BB%BA%E7%AB%8Bpython%E8%99%9B%E6%93%AC%E7%92%B0%E5%A2%83-step-by-step-tutorial-628719bdc7e3#431b)  
+[2.1.2 建立新資料夾](https://medium.com/%E6%B7%B7%E8%A1%80%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98/python-01-%E5%9C%A8macos%E7%B5%82%E7%AB%AF%E6%A9%9F%E7%94%A8pip%E5%BB%BA%E7%AB%8Bpython%E8%99%9B%E6%93%AC%E7%92%B0%E5%A2%83-step-by-step-tutorial-628719bdc7e3#2ee7)  
+[2.1.3 進去你剛建的資料夾](https://medium.com/%E6%B7%B7%E8%A1%80%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98/python-01-%E5%9C%A8macos%E7%B5%82%E7%AB%AF%E6%A9%9F%E7%94%A8pip%E5%BB%BA%E7%AB%8Bpython%E8%99%9B%E6%93%AC%E7%92%B0%E5%A2%83-step-by-step-tutorial-628719bdc7e3#bcec)  
+[2.1.4 建立虛擬環境](https://medium.com/%E6%B7%B7%E8%A1%80%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98/python-01-%E5%9C%A8macos%E7%B5%82%E7%AB%AF%E6%A9%9F%E7%94%A8pip%E5%BB%BA%E7%AB%8Bpython%E8%99%9B%E6%93%AC%E7%92%B0%E5%A2%83-step-by-step-tutorial-628719bdc7e3#01cf)
 
-可以看到都叫進來了～
+## 2.1.1 到你想要建新資料夾的地方
 
-檔案不要放在環境中：
+打開terminal，直接輸入你想要到的資料夾的地址（這裡以「文件」為例）
 
-到my\_project資料夾
+cd /Users/你的電腦名稱/Documents
 
-ls 看現在只有venv一個東西
+> 如何得到資料夾地址
 
-建立script.py檔
+`/Users/電腦名稱/Documents`的由來可以參考下面影片。
 
-ls可以看到script.py跟venv是分開的
+![](https://miro.medium.com/freeze/max/60/1*O2GB0sgBcLxW1UouJyKrew.gif?q=20)
 
-將整台電腦有的package弄進venv：
+![](https://miro.medium.com/max/2160/1*O2GB0sgBcLxW1UouJyKrew.gif)
 
-建立系統套件的環境
+\[影片文字描述，看懂影片可跳過\]  
+找到任何你想要知道地址的資料夾(以「文件」為例)，對資料夾點右鍵（觸控板預設是兩指同時點）會跳出選單，按住 **option⌥** 會有隱藏菜單，點 **拷貝「」做為路徑名稱** 就算成功複製，接著就可以直接**貼到terminal的****cd＋空格****後面**，按下 enter 。
 
-activate
+## 2.1.2 建立新資料夾
 
-系統的套件都進來了
+> 當然，你可以**直接「右鍵→建立新資料夾」**
 
-後來安裝的
+不過在terminal的方法就會是
 
-新安裝的不會影響原本系統的
+mkdir newfolder\_name
 
-mkdir folder\_name
+資料夾名稱自己取囉～不過
 
-cd folder\_name
+> 不要用**中文，**也不要 `**-**` `**?**` `**:**` `**>**` `**<**`，最好是**單純英文配** `**_**`
+
+## 2.1.3 進去你剛建的資料夾
+
+> 不是從資料夾點進去！！
+> 
+> 是在terminal的路徑要進去
+
+在terminal輸入
+
+cd newfolder\_name
+
+按enter後，如果你有一路跟著，現在你的terminal 如圖
+
+![](https://miro.medium.com/max/60/1*OZqbbmyIXfPIDi9BGJmOkQ.png?q=20)
+
+![](https://miro.medium.com/max/1014/1*OZqbbmyIXfPIDi9BGJmOkQ.png)
+
+接下來要進到重頭戲囉！要正式建立虛擬環境囉！
+
+## 2.1.4 建立虛擬環境
+
+在terminal輸入
 
 python3 -m venv name\_env
 
-ls
+`name_env` 是虛擬環境的名稱，可以隨便取，一樣不要有中文或奇怪符號。按下 `enter` 後會小等一下，接著輸入 `ls` 來顯示這個資料夾裡面有什麼，如圖，現在裡面有你的虛擬環境囉～
+
+![](https://miro.medium.com/max/60/1*G4WhXyB1ko7j6rWAHckLIw.png?q=20)
+
+![](https://miro.medium.com/max/1322/1*G4WhXyB1ko7j6rWAHckLIw.png)
+
+以上就是 **2.1 建立新的虛擬環境**，目前只有**建立**，接下來要介紹**啟動。**
+
+[**返回總目錄**](https://medium.com/%E6%B7%B7%E8%A1%80%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98/python-01-%E5%9C%A8macos%E7%B5%82%E7%AB%AF%E6%A9%9F%E7%94%A8pip%E5%BB%BA%E7%AB%8Bpython%E8%99%9B%E6%93%AC%E7%92%B0%E5%A2%83-step-by-step-tutorial-628719bdc7e3#d3a8)**｜**[**返回 2.1 建立新的虛擬環境目錄**](https://medium.com/%E6%B7%B7%E8%A1%80%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98/python-01-%E5%9C%A8macos%E7%B5%82%E7%AB%AF%E6%A9%9F%E7%94%A8pip%E5%BB%BA%E7%AB%8Bpython%E8%99%9B%E6%93%AC%E7%92%B0%E5%A2%83-step-by-step-tutorial-628719bdc7e3#0a62)
+
+## 2.2 啟動已建立虛擬環境的SOP
+
+[2.2.1 啟動虛擬環境](https://medium.com/%E6%B7%B7%E8%A1%80%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98/python-01-%E5%9C%A8macos%E7%B5%82%E7%AB%AF%E6%A9%9F%E7%94%A8pip%E5%BB%BA%E7%AB%8Bpython%E8%99%9B%E6%93%AC%E7%92%B0%E5%A2%83-step-by-step-tutorial-628719bdc7e3#b5a3)  
+[2.2.2 小小確認有沒有啟動](https://medium.com/%E6%B7%B7%E8%A1%80%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98/python-01-%E5%9C%A8macos%E7%B5%82%E7%AB%AF%E6%A9%9F%E7%94%A8pip%E5%BB%BA%E7%AB%8Bpython%E8%99%9B%E6%93%AC%E7%92%B0%E5%A2%83-step-by-step-tutorial-628719bdc7e3#faa0)  
+[2.2.3 查看已有哪些套件](https://medium.com/%E6%B7%B7%E8%A1%80%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98/python-01-%E5%9C%A8macos%E7%B5%82%E7%AB%AF%E6%A9%9F%E7%94%A8pip%E5%BB%BA%E7%AB%8Bpython%E8%99%9B%E6%93%AC%E7%92%B0%E5%A2%83-step-by-step-tutorial-628719bdc7e3#fcfe)  
+[2.2.4 安裝套件](https://medium.com/%E6%B7%B7%E8%A1%80%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98/python-01-%E5%9C%A8macos%E7%B5%82%E7%AB%AF%E6%A9%9F%E7%94%A8pip%E5%BB%BA%E7%AB%8Bpython%E8%99%9B%E6%93%AC%E7%92%B0%E5%A2%83-step-by-step-tutorial-628719bdc7e3#45e9)  
+[2.2.5 關閉虛擬環境](https://medium.com/%E6%B7%B7%E8%A1%80%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98/python-01-%E5%9C%A8macos%E7%B5%82%E7%AB%AF%E6%A9%9F%E7%94%A8pip%E5%BB%BA%E7%AB%8Bpython%E8%99%9B%E6%93%AC%E7%92%B0%E5%A2%83-step-by-step-tutorial-628719bdc7e3#781b)
+
+## 2.2.1 啟動虛擬環境
 
 source name\_env/bin/activate
 
-which python
+> 恭喜你，你已經啟動你的虛擬環境了
 
-pip list
+## 2.2.2 小小確認有沒有啟動
 
-pip install numpy...
+確認你已經啟動虛擬環境的方式：
 
-pip freeze
+1.  如圖，最前面會出現(name\_env)，代表你已經在這個虛擬環境中。
 
-pip freeze > requirements.txt
+![](https://miro.medium.com/max/60/1*_6G4ICZmko_oDg6O1NYsgQ.png?q=20)
 
-cat requirements.txt
+![](https://miro.medium.com/max/1400/1*_6G4ICZmko_oDg6O1NYsgQ.png)
 
-deactivate
+2\. 輸入 `which python3` ，會得到你現在使用的python3是從哪來的，而顯示的就會是你虛擬環境的地址。
 
-rm -rf name\_env/
+![](https://miro.medium.com/max/60/1*pAzxSyuNBjwtKx1R4sGw2A.png?q=20)
 
-mkdir my\_project
+![](https://miro.medium.com/max/2656/1*pAzxSyuNBjwtKx1R4sGw2A.png)
 
-python3 -m venv my\_project
+## 2.2.3 查看已有哪些套件
 
-source pipmy\_project/venv/bin/activate
+會使用python最主要的原因就是因為他功能強大的套件，所以我們現在來處理套件的部分。 `pip3 list` 可以顯示出你目前這個虛擬環境中有哪些套件。如圖，最原始版本只有pip和setuptools。下一步我們來安裝吧！
 
-pip install -r requirements.txt
+![](https://miro.medium.com/max/60/1*nl9nV2f1ANNUjIdi2j-s_Q.png?q=20)
 
-pip list
+![](https://miro.medium.com/max/2536/1*nl9nV2f1ANNUjIdi2j-s_Q.png)
 
-cd my\_project
+## 2.2.4 安裝套件
 
-ls
+由於我們的虛擬環境是用 `pip` 建立的，所以安裝套件就是用 `pip install` 為開頭。以 `pandas` 為例就是`pip install pandas` ，想確定的話可以google pip install pandas，跳出[pipy官方網站](https://pypi.org/)，可以直接點copy to clipboard再貼到terminal。
 
-touch [script.py](http://script.py)
+![](https://miro.medium.com/max/60/1*0hW3Q15plaOC8-Bqa4Ljkg.png?q=20)
 
-ls
+![](https://miro.medium.com/max/3804/1*0hW3Q15plaOC8-Bqa4Ljkg.png)
 
-python3 -m venv name\_env —system-site-packages
+以下整理基本上一定會用到的套件：
 
-source venv/bin/activate
+pip install pandas  
+pip install numpy  
+pip install matplotlib  
+pip install jupyterlabpip install seaborn  
+pip install — upgrade tensorflow  
+pip install scikit-learn  
+pip install Keras
 
-pip list
+## 2.2.5 關閉虛擬環境
 
-pip list —local
+假設你是用jupyter notebook 或是 jupyter lab，結束的時候要先在terminal輸入 `control⌃+c` 終止jupyter，接著輸入 `deactivate` 來關閉虛擬環境。如下圖最前面(name\_env)消失了，那就代表你關閉虛擬環境了。
 
-[](https://www.youtube.com/watch?v=Kg1Yvry_Ydk)[https://www.youtube.com/watch?v=Kg1Yvry\_Ydk](https://www.youtube.com/watch?v=Kg1Yvry_Ydk)
+![](https://miro.medium.com/max/60/1*jV4Ix177ehz6SUioAlT-dg.png?q=20)
 
-## python2 env
+![](https://miro.medium.com/max/2552/1*jV4Ix177ehz6SUioAlT-dg.png)
 
-sudo /usr/bin/easy\_install virtualenv # 安裝virtualenv
+[返回**總目錄**](https://medium.com/%E6%B7%B7%E8%A1%80%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98/python-01-%E5%9C%A8macos%E7%B5%82%E7%AB%AF%E6%A9%9F%E7%94%A8pip%E5%BB%BA%E7%AB%8Bpython%E8%99%9B%E6%93%AC%E7%92%B0%E5%A2%83-step-by-step-tutorial-628719bdc7e3#d3a8)｜[返回 **2.2 啟動已建立虛擬環境的SOP目錄**](https://medium.com/%E6%B7%B7%E8%A1%80%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98/python-01-%E5%9C%A8macos%E7%B5%82%E7%AB%AF%E6%A9%9F%E7%94%A8pip%E5%BB%BA%E7%AB%8Bpython%E8%99%9B%E6%93%AC%E7%92%B0%E5%A2%83-step-by-step-tutorial-628719bdc7e3#e2b0)
 
-cd 你要的資料夾路徑
+## 3\. 懶人包
 
-virtualenv name --python=python2.7
+3.1 建立虛擬環境
 
-## packages
+cd /Users/你的電腦名稱/Documents #到你要的資料夾  
+mkdir newfolder\_name #新增資料夾  
+cd newfolder\_name #進到資料夾  
+python3 -m venv name\_env #建立虛擬環境
 
-pip install numpy
+3.2 開啟虛擬環境SOP
 
-pip install matplotlib
-
-pip install pandas
-
-pip install --upgrade tensorflow
-
-pip install jupyterlab
-
-pip install scikit-learn
-
-## add virtual environment to Jupyter lab
-
-python -m ipykernel install --user --name=package\_env
-
-[Using Virtual Environments in Jupyter Notebook and Python](https://janakiev.com/blog/jupyter-virtual-envs/)
-
-## pip3 --version
-
-pip 19.2.3 from /Users/lnl/Documents/pythontest/test1213\_venv/lib/python3.8/site-packages/pip (python 3.8)
-
-## upgrade pip
-
-sudo python -m pip install --upgrade pip
-
-pip3 —version
-
-pip 20.3.1 from /Users/lnl/Documents/pythontest/test1213\_venv/lib/python3.8/site-packages/pip (python 3.8)
-
-which pip # 顯示現在pip在哪裏
-
-`pip list` # 顯示裡面有什麼套件
-
-deactivate
-
-pip --version
-
-pip 20.3.1 from/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/pip (python 3.8)
-
-## **跑了 pip install，那東西到底被裝到哪裡去了？ 😕**
-
-`pip install` 會有預設安裝的 dir，也會因為各種參數去改變，像是：`--target`, `--user`, `--prefix`, `--root` 等等。
-
-有兩個方法可以看被裝在哪：
-
-1.  最簡單的方法是剛才講到的，`pip --version` (或是`pip -V`)會顯示目前這個 pip 是跑哪一個 `site-packages` 下的 `pip` package ，這個路徑就是 install 時會放的 dir
-2.  或，比較間接的方法，先用 `pip list` 列出所有已經安裝的 pkg，然後用 `pip show [某pkg]` 就會寫 Location 在哪
-
-## How to fix ‘“ERROR: Command errored out with exit status 1:” when trying to install \_\_\_\_\_\_\_ using pip
-
-You need to upgrade `setuptools` and pip
-
-```python
-pip install -U pip setuptools
-```
+cd /Users/你的電腦名稱/Documents/newfolder\_name #到有虛擬環境的資料夾  
+source name\_env/bin/activate #開啟虛擬環境  
+jupyter lab #開啟jupyter lab，接著就可以開始使用
