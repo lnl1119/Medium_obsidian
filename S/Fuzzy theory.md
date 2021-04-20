@@ -12,3 +12,11 @@ https://web.math.sinica.edu.tw/math_media/d181/18102.pdf
 
 
 http://rportal.lib.ntnu.edu.tw/bitstream/20.500.12235/95760/2/n069475001302.pdf
+
+
+alpha cut fuzzy set
+
+
+
+membership function
+https://zh.wikipedia.org/wiki/%E9%9A%B8%E5%B1%AC%E5%87%BD%E6%95%B8

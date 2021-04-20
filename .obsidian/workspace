@@ -61,7 +61,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 227
+    "width": 227,
+    "collapsed": true
   },
   "right": {
     "id": "610a3dc3fc3b5334",
@@ -116,6 +117,7 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "S/Fuzzy theory.md",
     "Untitled.md",
     "DBSCAN.md",
     "S/Python Virtual Environment.md",
@@ -124,7 +126,6 @@
     "Template/YAML.md",
     "Template/Timeline.md",
     "Timeline for ML.md",
-    "S/py-1-python virtual environment.md",
-    "S/virtual environment.md"
+    "S/py-1-python virtual environment.md"
   ]
 }
