@@ -4,15 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "2dfb8038ca7e0b8a",
+        "id": "b3ef947c56310b0e",
         "type": "leaf",
         "active": true,
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "S/Fuzzy theory.md",
-            "mode": "source"
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -78,7 +75,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "S/Fuzzy theory.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,9 +99,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "S/Fuzzy theory.md"
-              }
+              "state": {}
             }
           }
         ],
