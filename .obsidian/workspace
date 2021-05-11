@@ -6,7 +6,6 @@
       {
         "id": "b3ef947c56310b0e",
         "type": "leaf",
-        "active": true,
         "state": {
           "type": "empty",
           "state": {}
@@ -58,8 +57,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 227,
-    "collapsed": true
+    "width": 227
   },
   "right": {
     "id": "610a3dc3fc3b5334",
@@ -78,6 +76,8 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -110,6 +110,7 @@
     "width": 208,
     "collapsed": true
   },
+  "active": "b3ef947c56310b0e",
   "lastOpenFiles": [
     "S/Fuzzy theory.md",
     "Untitled.md",
